@@ -1,18 +1,10 @@
-//
-//  Deli.swift
-//  ArrayChallengeDeuce2
-//
-//  Created by Jim Campagno on 9/17/16.
-//  Copyright © 2016 Flatiron School. All rights reserved.
-//
+//: Playground - noun: a place where people can play
 
+import UIKit
 
-
-
-class Deli {
     
     var line: [String] = []
-    var y = 0    // 1
+    //var y = 0    // 1
     func addNameToLine(name: String) -> String {
         
         // TODO: Implement this function.
@@ -24,23 +16,23 @@ class Deli {
         default:
             line.append(name)
         }
-        for _ in line {
-            y += 1
-        }
+
         if name == "Billy Crystal" || name == "Meg Ryan" {
+            
+            //y += 1
             return "Welcome \(name)! You may sit wherever you like."
         }
         else if name == line[0] {
+            //y += 1
             return "Welcome \(name), you're first in line!"
         }
         else {
-            return "Welcome \(name), you're number \(y) in line."
+            //y += 1
+            return "Welcome \(name), you're number \(line.enumerated()) in line."
         }
     }
     
     func nowServing() -> String {
-        
-        // TODO: Implement this function.
         var toBeServed: [String] = []
         
         if line.isEmpty {
@@ -53,7 +45,7 @@ class Deli {
             return "Now serving \(toBeServed[0])!"
         }
     }
-    
+
     // 3
     func lineDescription() -> String {
         
@@ -66,4 +58,35 @@ class Deli {
             
         }
     }
-}
+
+addNameToLine(name: "Jake")
+addNameToLine(name: "Tiffany")
+addNameToLine(name: "Billy Crystal")
+addNameToLine(name: "Meg Ryan")
+addNameToLine(name: "Jim")
+
+nowServing()
+nowServing()
+nowServing()
+nowServing()
+nowServing()
+nowServing()
+
+lineDescription()
+
+addNameToLine(name: "Jake")
+addNameToLine(name: "Tiffany")
+addNameToLine(name: "Billy Crystal")
+addNameToLine(name: "Meg Ryan")
+addNameToLine(name: "Jim")
+
+print(lineDescription())
+
+
+
+
+
+
+
+
+
