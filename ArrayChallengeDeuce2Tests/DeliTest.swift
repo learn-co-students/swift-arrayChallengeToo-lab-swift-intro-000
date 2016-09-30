@@ -40,7 +40,7 @@ class DeliTest: XCTestCase {
         let countOfLine = deli.line.count
         let firstPersonInLine = deli.line.first ?? "NO ONE"
         
-        let expectedBillyCrystalGreeting = "Welcome Billy Crystal! You can sit wherever you like."
+        let expectedBillyCrystalGreeting = "Welcome Billy Crystal! You may sit wherever you like."
         let expectedCountOfLine = 4
         let expectedFirstPersonInLine = "Billy Crystal"
         
@@ -57,7 +57,7 @@ class DeliTest: XCTestCase {
         let countOfLine = deli.line.count
         let firstPersonInLine = deli.line.first ?? "NO ONE"
         
-        let expectedMegRyanGreeting = "Welcome Meg Ryan! You can sit wherever you like."
+        let expectedMegRyanGreeting = "Welcome Meg Ryan! You may sit wherever you like."
         let expectedCountOfLine = 6
         let expectedFirstPersonInLine = "Meg Ryan"
         
