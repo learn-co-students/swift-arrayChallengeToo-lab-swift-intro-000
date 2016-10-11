@@ -39,8 +39,9 @@ class Deli {
         var message: String = ""
         // TODO: Implement this function.
         if !line.isEmpty {
-            message = "Now serving \(line[0])!"
-            line.remove(at: 0)
+            let person = line.remove(at: 0)
+            message = "Now serving \(person)!"
+            
         }else {
             message = "There is no one to be served."
         }
