@@ -14,39 +14,51 @@ class Deli {
     var line: [String] = []
     var phrase = ""
     
-    // 1
     func addNameToLine(name: String) -> String {
-        
         switch name {
         case "Billy Crystal":
             line.insert(name, at: 0)
             phrase = "Welcome Billy Crystal! You can sit wherever you like."
-        case "Mega Ryan":
+        case "Meg Ryan":
             line.insert(name, at: 0)
             phrase = "Welcome Meg Ryan! You can sit wherever you like."
         default:
             line.append(name)
             phrase = "Welcome \(name), you're number \(line) in line" // need to find the position of this persons line and interpolate it in line.
         }
+        print("\(line)")
+        print(phrase)
         return phrase
     }
     
-    
-    // 2
+    //=================================================
     func nowServing() -> String {
-        
-        // TODO: Implement this function.
-        return String
-
+        var shouts = ""
+        var onLine = ""
+        if !line.isEmpty {
+            onLine = line.first!
+            print("Now serving \(onLine)")
+            shouts = "Now serving \(onLine)"
+            line.removeFirst()
+        } else {
+            shouts = "There is no one to be served"
+        }
+        print(line)
+        return shouts
     }
     
-    
-    // 3
+    //=================================================
     func lineDescription() -> String {
+        var currentLineStatus = ""
+        if !line.isEmpty {
+            for (index, person) in line.enumerated() {
+                print("\(index + 1). \(person)\n")
+            }
+        } else {
+            currentLineStatus = "The line is currently empty."
+        }
         
-        // TODO: Implement this function.
-        return String
-
+        return currentLineStatus
     }
     
 }
