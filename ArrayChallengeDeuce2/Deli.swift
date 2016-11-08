@@ -61,7 +61,9 @@ class Deli {
             if line.isEmpty {
                 return "There is no one to be served."
             } else {
-                return "Now serving \(line.count)!"
+                let position = line[0]
+                line.remove(at: 0)
+                return "Now serving \(position)!"
             }
     }
     
@@ -70,15 +72,17 @@ class Deli {
     func lineDescription() -> String {
         
         // TODO: Implement this function.
+        var list = "The line is:"
+        
         if line.isEmpty {
             return "The line is currently empty."
         } else {
-            var names = "The line is: \n"
             for (x, y) in line.enumerated() {
-                names.append("\(x + 1). \(y)")
+                list.append("\n\(x + 1). \(y)")
             }
-            return names
+            return list
         }
+
 
     }
     
