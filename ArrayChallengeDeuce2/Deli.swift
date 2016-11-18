@@ -94,20 +94,19 @@ class Deli {
          3. Neil deGrasse Tyson
          4. Yoshi"
          */
+        var order = "The line is:"
 
         if(line.isEmpty)
         {
             return("The line is currently empty.")
         }
         else{
-           var order = "The line is: \n"
             for (index, name) in line.enumerated()
             {
-                order.append("\(index + 1). \(name) \n")
+              order.append("\n\(index+1). \(name)")
            
             }
-            return order
-           
+          return order
         }
         
         
