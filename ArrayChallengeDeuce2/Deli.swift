@@ -7,7 +7,7 @@
 //
 
 
-
+//Done as part of Deli Counter lab
 
 class Deli {
     
