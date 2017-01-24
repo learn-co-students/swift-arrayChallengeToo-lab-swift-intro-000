@@ -31,7 +31,6 @@ class Deli {
                 msg = "Welcome \(name), you're number \(line.count+1) in line."
             }
             line.append(name)
-
         }
         
         return msg
@@ -53,7 +52,7 @@ class Deli {
     }
     
     
-    // 3
+    // 3  
     func lineDescription() -> String {
         
         // TODO: Implement this function.
@@ -69,7 +68,5 @@ class Deli {
         }
         return lineDespMsg
     }
-    
-    
     
 }
