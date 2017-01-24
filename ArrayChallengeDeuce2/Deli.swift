@@ -17,23 +17,23 @@ class Deli {
     func addNameToLine(name: String) -> String {
                 
        // TODO: Implement this function.
-        var msg = String()
+        var welcomeMsg = String()
         if name == "Billy Crystal" || name == "Meg Ryan" {
             
-            msg = "Welcome \(name)! You can sit wherever you like."
+            welcomeMsg = "Welcome \(name)! You can sit wherever you like."
             line.insert(name, at: 0)
         }
         else {
             if line.isEmpty {
-                msg = "Welcome \(name), you're first in line!"
+                welcomeMsg = "Welcome \(name), you're first in line!"
             }
             else {
-                msg = "Welcome \(name), you're number \(line.count+1) in line."
+                welcomeMsg = "Welcome \(name), you're number \(line.count+1) in line."
             }
             line.append(name)
         }
         
-        return msg
+        return welcomeMsg
     }
     
     
