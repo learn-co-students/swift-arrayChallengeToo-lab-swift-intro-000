@@ -20,15 +20,22 @@ class Deli {
         
         if name == line[0] {
             return "Welcome \(name), you're first in line!"
-            
-        } else if name == "Billy Crystal" {
-            if name == "Meg Ryan" {
+          
+            if line.contains("Meg Ryan") {
                 line.insert(name, at: 0)
-                return "Welcome \(name)!, You can sit wherever you like."
+                return "Welcome \(name)! You can sit wherever you like."
+            } else if line.contains("Billy Crystal") {
+                line.insert(name, at: 0)
+                return "Welcome \(name)! You can sit wherever you like."
+
+//        } else if name == "Billy Crystal" {
+//            if name == "Meg Ryan" {
+//                line.insert(name, at: 0)
+//                return "Welcome \(name)!, You can sit wherever you like."
             } else {
-                retun "Welcome \(name), you're number"
+                return "Welcome \(name), you're number"
             }
-        }
+        
         
         
 }
