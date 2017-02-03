@@ -16,30 +16,22 @@ class Deli {
     // 1
     func addNameToLine(name: String) -> String {
         
-        line.append(name)
+        if name == "Billy Crystal" {
+            line.insert(name, at: 0)
+            return "Welcome \(name)! You can sit wherever you want."
+        } else if name == "Meg Ryan" {
+            line.insert(name, at: 0)
+            return "Welcome \(name)! You can sit wherever you want."
+        } else if line.isEmpty {
+            line.append(name)
+            return "Welcome \(name), you're first in line."
+        } else {
+            return "Welcome \(name), you're number \(line.count + 1) in line."
+        }
         
-        if name == line[0] {
-            return "Welcome \(name), you're first in line!"
-          
-            if line.contains("Meg Ryan") {
-                line.insert(name, at: 0)
-                return "Welcome \(name)! You can sit wherever you like."
-            } else if line.contains("Billy Crystal") {
-                line.insert(name, at: 0)
-                return "Welcome \(name)! You can sit wherever you like."
-
-//        } else if name == "Billy Crystal" {
-//            if name == "Meg Ryan" {
-//                line.insert(name, at: 0)
-//                return "Welcome \(name)!, You can sit wherever you like."
-            } else {
-                return "Welcome \(name), you're number"
-            }
-        
-        
-        
-}
+    }
     
+
 
     // 2
     func nowServing() -> String {
