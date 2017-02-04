@@ -30,18 +30,7 @@ class Deli {
             line.append(name)
             return "Welcome \(name), you're number \(line.count) in line."
         }
-//        if name == "Billy Crystal" {
-//            line.insert(name, at: 0)
-//            return "Welcome \(name)! You can sit wherever you like."
-//        } else if name == "Meg Ryan" {
-//            line.insert(name, at: 0)
-//            return "Welcome \(name)! You can sit wherever you like."
-//        } else if line.isEmpty {
-//            line.append(name)
-//            return "Welcome \(name), you're first in line!"
-//        } else {
-//            return "Welcome \(name), you're number \(line.count + 1) in line."
-//        }
+
     }
     
 
