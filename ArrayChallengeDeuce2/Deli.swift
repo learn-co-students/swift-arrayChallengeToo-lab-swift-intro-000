@@ -27,7 +27,8 @@ class Deli {
             line.insert(name, at: 0)
             return "Welcome \(name)! You can sit wherever you like."
         } else {
-            return "Welcome \(name), you're number \(line.count + 1) in line."
+            line.append(name)
+            return "Welcome \(name), you're number \(line.count) in line."
         }
 //        if name == "Billy Crystal" {
 //            line.insert(name, at: 0)
@@ -51,10 +52,10 @@ class Deli {
         if line.isEmpty {
             return "There is no one to be served."
         } else if !line.isEmpty {
-            print("Now serving \(line[0])!")
-            line.remove(at: 0)
+            
         }
-        return ""
+            return "Now serving \(line.remove(at: 0))!"
+
     }
     
     
