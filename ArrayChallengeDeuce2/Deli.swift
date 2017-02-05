@@ -51,15 +51,18 @@ class Deli {
     // 3
     func lineDescription() -> String {
         
+        var lineIs = "The line is:"
+        
         if line.isEmpty {
             return "The line is currently empty."
-        } else {
-            for (index, step) in line.enumerated() {
-                return "The line is: \(index + 1). \(step)"
         }
+            for (index, name) in line.enumerated() {
+                lineIs += "\n\(index + 1). \(name)"
+            }
+            return lineIs
+        }
+    
+    
 
-    }
-        return ""
-}
     
 }
