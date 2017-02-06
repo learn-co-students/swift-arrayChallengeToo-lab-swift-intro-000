@@ -55,14 +55,15 @@ class Deli {
         
         if line.isEmpty {
             return "The line is currently empty."
-        }
+        } else {
             for (index, name) in line.enumerated() {
-                lineIs += "\n\(index + 1). \(name)"
+                lineIs.append("\n\(index + 1). \(name)")
+                // or this as well:  lineIs += "\n\(index + 1). \(name)"
             }
             return lineIs
         }
     
-    
+    }
 
     
 }
