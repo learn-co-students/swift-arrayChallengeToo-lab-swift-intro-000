@@ -16,24 +16,49 @@ class Deli {
     // 1
     func addNameToLine(name: String) -> String {
                 
-       // TODO: Implement this function.
-        
+        switch name {
+        case "Billy Crystal":
+            line.insert(name, at: 0)
+            return "Welcome Billy Crystal! You can sit wherever you like."
+        case "Meg Ryan":
+            line.insert(name, at: 0)
+            return "Welcome Meg Ryan! You can sit wherever you like."
+        default:
+            line.append(name)
+            if line.count == 1 {
+                 return "Welcome \(name), you're first in line!"
+            }
+
+            return "Welcome \(name), you're number \(line.count) in line."
+        }
     }
     
     
     // 2
     func nowServing() -> String {
-        
-        // TODO: Implement this function.
+
+        if line.isEmpty { return("There is no one to be served.") }
+        let person = line.removeFirst()
+        return("Now serving \(person)!")
 
     }
     
     
     // 3
     func lineDescription() -> String {
-        
-        // TODO: Implement this function.
+        var description = "The line is:\n"
 
+        if line.isEmpty { return( "The line is currently empty.") }
+
+        for (index, person) in line.enumerated() {
+            if index == (line.count - 1) {
+                description += "\(index + 1). \(person)"
+            } else {
+                description += "\(index + 1). \(person)\n"
+            }
+        }
+
+        return description
     }
     
 }
