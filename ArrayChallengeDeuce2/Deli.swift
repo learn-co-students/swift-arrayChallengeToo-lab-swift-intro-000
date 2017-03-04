@@ -39,8 +39,7 @@ class Deli {
         return result
     }
     
-    
-    // 2
+
     func nowServing() -> String {
         
         if !line.isEmpty {
@@ -51,11 +50,21 @@ class Deli {
         return "There is no one to be served."
     }
     
-    
-    // 3
+
     func lineDescription() -> String {
         
-        return ""
+        if line.isEmpty {
+            return "The line is currently empty."
+        }
+        
+        var result = "The line is:"
+        
+        for (index, person) in line.enumerated() {
+            result.append("\n")
+            result.append("\(index + 1). \(person)")
+        }
+        
+        return result
 
     }
     
