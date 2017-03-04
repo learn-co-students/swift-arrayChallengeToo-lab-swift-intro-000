@@ -32,7 +32,7 @@ class Deli {
                     result = "Welcome \(name), you're first in line!"
                 }
             default:
-                result = "Welcome \(name), you're number \(position + 1))"
+                result = "Welcome \(name), you're number \(position + 1) in line."
             }
         }
 
@@ -43,8 +43,12 @@ class Deli {
     // 2
     func nowServing() -> String {
         
-        return ""
-
+        if !line.isEmpty {
+            let nextInLine = line.remove(at: 0)
+            return "Now serving \(nextInLine)!"
+        }
+        
+        return "There is no one to be served."
     }
     
     
