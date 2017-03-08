@@ -16,27 +16,7 @@ class Deli {
     // 1
     func addNameToLine(name: String) -> String {
         
-//        var index: Int
-        
-//        
-//       if name == "Billy Crystal" || name == "Meg Ryan" {
-//            line.insert(name, at: 0)
-//       } else {
-//            line.append(name)
-//        }
-//        
-//        for (index, name) in line.enumerated() {
-//            if name == "Billy Crystal" {
-//                return "Welcome Billy Crystal! You can sit wherever you like."
-//            } else if name == "Meg Ryan" {
-//                return "Welcome Meg Ryan! You can sit wherever you like."
-//            } else if index == 0 && (name != "Billy Crystal" && name != "Meg Ryan") {
-//                return "Welcome \(name), you're first in line!"
-//            } else {
-//                return "Welcome \(name), you're number \(index + 1) in line."
-//            }
-//        }
-        
+       
         if name == "Billy Crystal" || name == "Meg Ryan" {
             line.insert(name, at: 0)
         } else {
