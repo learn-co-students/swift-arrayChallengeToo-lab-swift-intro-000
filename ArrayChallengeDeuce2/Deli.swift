@@ -15,25 +15,43 @@ class Deli {
     
     // 1
     func addNameToLine(name: String) -> String {
+        
+        line.append(name)
+        
+        var number = 0
+        
+        
+        for printer in line {
+            number += 1
+            
+            if printer == "Billy Crystal" || printer == "Meg Ryan" {
                 
-       // TODO: Implement this function.
-        
+                print ("Welcome \(printer) You can sit wherever you like.")
+            } else {
+                print ("Welcome \(printer) You are in \(number) line.")
+            }
+            
+        }
+        return name
     }
     
-    
-    // 2
-    func nowServing() -> String {
+    func serving() -> String {
+        let name:String = ""
         
-        // TODO: Implement this function.
-
+        if line.isEmpty {
+            print("No one to be served")
+        } else if !line.isEmpty {
+            print("Serving \(line)")
+        }
+        return name
     }
     
-    
-    // 3
-    func lineDescription() -> String {
-        
-        // TODO: Implement this function.
-
+    func lineServing() -> String {
+        if line.isEmpty {
+            return ("The line is currently empty.")
+        } else {
+            return "\(line)"
+        }
     }
     
 }
