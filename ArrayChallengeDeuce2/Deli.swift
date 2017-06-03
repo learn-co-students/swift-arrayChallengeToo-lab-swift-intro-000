@@ -63,14 +63,16 @@ class Deli {
             return "The line is currently empty."
         }
         else{
-            print("The line is:")
-            for name in line
-            {
-                print("line.index(of:name). \(name) \n")
+            var result="The line is:\n"
+            for (index, name) in line.enumerated()
+                {
+                    if index==line.count-1{
+                        result.append("\(index+1). \(name)")}
+                    else
+                    {result.append("\(index+1). \(name)\n")}
+                }
+            return result
             }
-            return "The line is:\n1. Rob\n2. Catherine\n3. Paul\n4. Dom"
-        }
-
+    }
     
-}
 }
