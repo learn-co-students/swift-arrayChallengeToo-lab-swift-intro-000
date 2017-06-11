@@ -106,7 +106,7 @@ class DeliTest: XCTestCase {
         // Establishing a line with 4 people on it.
         deli.line = ["Rob", "Catherine", "Paul", "Dom"]
         
-        let description = deli.lineDescription()
+        let description = deli.lineDescription(line: ["Rob", "Catherine", "Paul", "Dom"])
         let expectedDescription = "The line is:\n1. Rob\n2. Catherine\n3. Paul\n4. Dom"
         
         XCTAssertEqual(description, expectedDescription, "lineDescription is not returning back the right String.")
@@ -114,7 +114,7 @@ class DeliTest: XCTestCase {
     
     func testLineDescriptionWhenLineIsEmpty() {
         // Empty Line
-        let description = deli.lineDescription()
+        let description = deli.lineDescription(line: [])
         let expectedDescription = "The line is currently empty."
         
         XCTAssertEqual(description, expectedDescription, "When the line is empty, it should return back 'The line is currently empty.'")
