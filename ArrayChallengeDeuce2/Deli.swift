@@ -16,7 +16,11 @@ class Deli {
     // 1
     func addNameToLine(name: String) -> String {
                 
-       // TODO: Implement this function.
+        if name == "Billy Crystal" || name == "Meg Ryan" {
+            line[0] = name
+        } else {
+            line.append(name)
+        }
         
     }
     
@@ -24,7 +28,11 @@ class Deli {
     // 2
     func nowServing() -> String {
         
-        // TODO: Implement this function.
+        if line.count == 0 {
+            return "There is no one to be served."
+        } else {
+            return "Now serving \(line[0])"
+        }
 
     }
     
@@ -32,7 +40,14 @@ class Deli {
     // 3
     func lineDescription() -> String {
         
-        // TODO: Implement this function.
+        if line.count == 0 {
+            return "The line is currently empty."
+        } else {
+            
+            for i in 0...line.count-1 {
+                return "The line is: \n\(i). \(line[i])"
+            }
+        }
 
     }
     
