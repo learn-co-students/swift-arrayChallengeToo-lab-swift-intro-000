@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "820F4782B67AAA8C88C865B9B97B9FCC65835657",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9E597BBE87E95B2839A79FC65E398B71517818AF" : 9223372036854775807,
+    "820F4782B67AAA8C88C865B9B97B9FCC65835657" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "63E5411A-F9B7-4AFE-9C4D-26124298C218",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9E597BBE87E95B2839A79FC65E398B71517818AF" : "",
+    "820F4782B67AAA8C88C865B9B97B9FCC65835657" : "swift-arrayChallengeToo-lab-swift-intro-000\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ArrayChallengeDeuce2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ArrayChallengeDeuce2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/samudrar\/swift-arrayChallengeToo-lab-swift-intro-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "820F4782B67AAA8C88C865B9B97B9FCC65835657"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/samudrar\/swift-interfaceBuilder-lab-swift-intro-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9E597BBE87E95B2839A79FC65E398B71517818AF"
+    }
+  ]
+}
