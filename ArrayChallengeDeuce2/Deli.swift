@@ -16,7 +16,6 @@ class Deli {
     // 1
     func addNameToLine(name: String) -> String {
                 
-       // TODO: Implement this function.
         if (name == "Billy Crystal") || (name == "Meg Ryan") {
             line.insert(name, at: 0)
             return "Welcome \(name)! You can sit wherever you like."
@@ -32,8 +31,7 @@ class Deli {
     
     // 2
     func nowServing() -> String {
-        
-        // TODO: Implement this function.
+    
         switch line.count {
         case 0:
             return "There is no one to be served."
