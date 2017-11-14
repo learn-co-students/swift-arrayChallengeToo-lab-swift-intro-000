@@ -15,7 +15,6 @@ class Deli {
     
     // 1
     func addNameToLine(name: String) -> String {
-                
         if (name == "Billy Crystal") || (name == "Meg Ryan") {
             line.insert(name, at: 0)
             return "Welcome \(name)! You can sit wherever you like."
@@ -24,10 +23,11 @@ class Deli {
             if line.count == 1 {
                 return "Welcome \(name), you're first in line!"
             }else {
-            return "Welcome \(name), you're number \(line.count) in line."
+                return "Welcome \(name), you're number \(line.count) in line."
+            }
         }
+       
     }
-    
     
     // 2
     func nowServing() -> String {
@@ -40,8 +40,6 @@ class Deli {
             line.remove(at: 0)
             return "Now serving \(currentCustomer)!"
         }
-    
-        
         
     }
     
@@ -61,5 +59,5 @@ class Deli {
             return lineOrder
         }
         }
-    }
+    
 }
