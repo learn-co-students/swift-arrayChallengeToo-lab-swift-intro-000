@@ -25,7 +25,7 @@ class DeliTest: XCTestCase {
         let firstCustomerGreeting = deli.addNameToLine(name: "Jon Snow")
         let countOfLine = deli.line.count
         
-        let expectedFirstCustomerGreeting = "Welcome Jon Snow, you're first in line!"
+        let expectedFirstCustomerGreeting = "Welcome Jon Snow, you're number 1 in line."
         let expectedCountOfLine = 1
         
         XCTAssertEqual(firstCustomerGreeting, expectedFirstCustomerGreeting)
