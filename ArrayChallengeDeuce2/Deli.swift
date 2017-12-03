@@ -25,19 +25,16 @@ class Deli {
             line.append(name)
         }
 
-        if !line[0].isEmpty {
-            return "Welcome \(name), you're first in line!"
+        if (line[0] == name) {
+         return "Welcome \(name), you're first in line!"
         }else{
-            //Welcome Jim, you're number 6 in line.
-            return "Welcome \(name), you're number \(line.count+1) in line."
+        return "Welcome \(name), you're number \(line.count) in line."
         }
     }
     
     
     // 2
     func nowServing() -> String {
-        
-        // TODO: Implement this function.
         if line.isEmpty{
             return "There is no one to be served."
         }else{
@@ -50,16 +47,17 @@ class Deli {
     
     // 3
     func lineDescription() -> String {
-        var newText: String = "The line is"
         if line.isEmpty{
-            return "\(newText) currently empty."
+            return "The line is currently empty."
         }else{
+            var newText: String = "The line is:"
             for (index, names) in line.enumerated(){
-//                line.append(names)
-                newText.append(":\n\(index+1). \(names)\n")
+                newText.append("\n\(index+1). \(names)")
+//                newText += "\n\(index+1). \(names)\n"
+//                newText = newText + "\n\(index+1). \(names)"
             }
+            return newText
         }
-//        print(newText)
-         return newText
+//         return newText
     }
 }
