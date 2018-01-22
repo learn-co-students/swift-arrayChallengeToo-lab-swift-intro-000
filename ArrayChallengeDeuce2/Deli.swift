@@ -15,8 +15,32 @@ class Deli {
     
     // 1
     func addNameToLine(name: String) -> String {
+        
+        var greeting = ""
                 
-       // TODO: Implement this function.
+        // whitelist of names that are going to be in the first line
+        let whitelist = ["Billy Crystal", "Meg Ryan"]
+        
+        if self.line.isEmpty {
+            self.line.append(name)
+            
+            greeting = "Welcome \(name), you're first in line!"
+        }
+        else if whitelist.contains(name) {
+            
+            // insert to the first of line
+            self.line.insert(name, at: 0)
+            
+            greeting = "Welcome \(name)! You can sit wherever you like."
+            
+        }
+        else {
+            self.line.append(name)
+            
+            greeting = "Welcome \(name), you're number \(self.line.count) in line."
+        }
+        
+        return greeting
         
     }
     
@@ -24,15 +48,44 @@ class Deli {
     // 2
     func nowServing() -> String {
         
-        // TODO: Implement this function.
+        var message = ""
+        
+        if !self.line.isEmpty {
+            
+            message = "Now serving \(self.line[0])!"
+            
+            // remove from the list
+            self.line.remove(at: 0)
+            
+        }
+        else {
+            message = "There is no one to be served."
+        }
 
+        return message
+        
     }
     
     
     // 3
     func lineDescription() -> String {
         
-        // TODO: Implement this function.
+        var message = ""
+        
+        if !self.line.isEmpty {
+            
+            message = "The line is:"
+            
+            for (key, name) in self.line.enumerated() {
+                message += "\n\(key+1). \(name)"
+            }
+            
+        }
+        else {
+            message = "The line is currently empty."
+        }
+        
+        return message
 
     }
     
