@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ArrayChallenge
+//  ArrayChallengeDeuce2
 //
-//  Created by James Campagno on 6/10/16.
+//  Created by James Campagno on 7/7/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
