@@ -12,8 +12,8 @@
 		5B3FB6BF1D2EABB1009B8A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3FB6BD1D2EABB1009B8A73 /* Main.storyboard */; };
 		5B3FB6C11D2EABB1009B8A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3FB6C01D2EABB1009B8A73 /* Assets.xcassets */; };
 		5B3FB6C41D2EABB1009B8A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3FB6C21D2EABB1009B8A73 /* LaunchScreen.storyboard */; };
-		7D775D8B1D8D8F87009EEF3A /* Deli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D775D8A1D8D8F87009EEF3A /* Deli.swift */; };
 		7D775D8D1D8D96C8009EEF3A /* DeliTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D775D8C1D8D96C8009EEF3A /* DeliTest.swift */; };
+		BCC4B64F20FA86AA004D66EF /* Deli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D775D8A1D8D8F87009EEF3A /* Deli.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,7 +220,6 @@
 			files = (
 				5B3FB6BC1D2EABB1009B8A73 /* ViewController.swift in Sources */,
 				5B3FB6BA1D2EABB1009B8A73 /* AppDelegate.swift in Sources */,
-				7D775D8B1D8D8F87009EEF3A /* Deli.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D775D8D1D8D96C8009EEF3A /* DeliTest.swift in Sources */,
+				BCC4B64F20FA86AA004D66EF /* Deli.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
