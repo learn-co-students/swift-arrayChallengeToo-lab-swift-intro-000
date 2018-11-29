@@ -107,7 +107,7 @@ class DeliTest: XCTestCase {
         deli.line = ["Rob", "Catherine", "Paul", "Dom"]
         
         let description = deli.lineDescription()
-        let expectedDescription = "The line is:\n1. Rob\n2. Catherine\n3. Paul\n4. Dom"
+        let expectedDescription = "The line is: 1. Rob 2. Catherine 3. Paul 4. Dom"
         
         XCTAssertEqual(description, expectedDescription, "lineDescription is not returning back the right String.")
     }
